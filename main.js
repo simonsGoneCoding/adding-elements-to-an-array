@@ -6,14 +6,14 @@ const addName = (e) => {
     const input = document.querySelector('input');
     const newName = input.value;
     if (input.value) {
-        //for of loop
+        //--------------for of loop--------------------
         for (name of names) {
             if (name === newName) {
                 alert('this name has been added already!');
                 return
             }
         }
-        // forEach method
+        // ------------forEach method------------------
         // names.forEach((name) => {
         //     if (name === newName) {
         //         alert('no double names allowed!');
@@ -25,7 +25,6 @@ const addName = (e) => {
         div.textContent += `${newName}, `;
         input.value = ''
     }
-    console.log('dalej leci')
 }
 
 
